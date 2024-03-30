@@ -6,7 +6,7 @@ with open("All History of Rome episodes.txt", "r") as file:
 
 for url in urls:
     url = url.strip()
-    filename = os.path.basename(url)
+    filename = os.path.basename(url).replace("_", " ")
 
     response = requests.get(url)
 
